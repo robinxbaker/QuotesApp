@@ -150,16 +150,19 @@ Create a .env file in the backend/ directory with the following content:
    FRONTEND_URL=http://localhost:3000
    RECAPTCHA_SITE_KEY=your_recaptcha_site_key
    RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
+```
 
 ## Running the Application
 ### Backend
    ```bash
    cd backend
    flask run
+```
 ### Frontend
    ```bash
    cd frontend
    npm start
+```
 ## Deployment
 # Deploying the Backend on Google App Engine
 Deploy the Flask backend:
