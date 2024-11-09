@@ -49,12 +49,10 @@ A full-stack web application for users to create, share, and rate quotes. The ap
 ---
 
 ## Project Structure
-Project Structure
-css
-Copy code
+   ```css
 quotes-app/
-   backend/
-      app.py
+├── backend/
+│   ├── app.py
 │   ├── config.py
 │   ├── models.py
 │   ├── routes/
@@ -82,6 +80,8 @@ quotes-app/
 │   │   ├── index.js
 │   └── package.json
 └── README.md
+```
+
 ## Getting Started
 
 ### Prerequisites
