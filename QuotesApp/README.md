@@ -111,8 +111,8 @@ quotes-app/
    
 4. ***Set up the MySQL database:***
 
--Create a MySQL database named quotes_db.
--Update the .env file with your database credentials.
+   -Create a MySQL database named quotes_db.
+   -Update the .env file with your database credentials.
 5. ***Initialize the database:***
 
    ```bash
