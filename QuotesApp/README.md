@@ -53,8 +53,8 @@ Project Structure
 css
 Copy code
 quotes-app/
-├── backend/
-│   ├── app.py
+   backend/
+      app.py
 │   ├── config.py
 │   ├── models.py
 │   ├── routes/
