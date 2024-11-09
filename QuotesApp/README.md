@@ -121,48 +121,47 @@ quotes-app/
    flask db upgrade
 
 ### Frontend Setup
-Navigate to the frontend directory:
+1. ***Navigate to the frontend directory:***
 
-bash
-Copy code
-cd ../frontend
-Install dependencies:
+   ```bash
+   cd ../frontend
+   
+2. ***Install dependencies:***
 
-bash
-Copy code
-npm install
-Create a .env file with the following content:
+   ```bash
+   npm install
+   
+3. ***Create a .env file with the following content:***
 
-makefile
-Copy code
-REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
-Environment Variables
+   ```makefile
+   REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
+   
+## Environment Variables
+
 Create a .env file in the backend/ directory with the following content:
 
-makefile
-Copy code
-SECRET_KEY=your_secret_key
-DATABASE_URL=mysql+mysqlconnector://root:password@localhost/quotes_db
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_email_password
-FRONTEND_URL=http://localhost:3000
-RECAPTCHA_SITE_KEY=your_recaptcha_site_key
-RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
-Running the Application
-Backend
-bash
-Copy code
-cd backend
-flask run
-Frontend
-bash
-Copy code
-cd frontend
-npm start
-Deployment
-Deploying the Backend on Google App Engine
+   ```makefile
+   SECRET_KEY=your_secret_key
+   DATABASE_URL=mysql+mysqlconnector://root:password@localhost/quotes_db
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_CLIENT_SECRET=your_google_client_secret
+   MAIL_USERNAME=your_email@gmail.com
+   MAIL_PASSWORD=your_email_password
+   FRONTEND_URL=http://localhost:3000
+   RECAPTCHA_SITE_KEY=your_recaptcha_site_key
+   RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
+
+## Running the Application
+### Backend
+   ```bash
+   cd backend
+   flask run
+### Frontend
+   ```bash
+   cd frontend
+   npm start
+## Deployment
+# Deploying the Backend on Google App Engine
 Deploy the Flask backend:
 bash
 Copy code
