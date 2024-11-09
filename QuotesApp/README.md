@@ -94,12 +94,12 @@ quotes-app/
 
 ### Backend Setup
 
-1. **Clone the repository**:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/quotes-app.git
    cd quotes-app/backend
    
-2. **Create a virtual environment**:
+2. **Create a virtual environment:**
 
    ```bash
    python -m venv venv
@@ -109,9 +109,10 @@ quotes-app/
 
    ```bash
    pip install -r requirements.txt
-   Set up the MySQL database:
+   
+4. ***Set up the MySQL database:***
 
-Create a MySQL database named quotes_db.
+   Create a MySQL database named quotes_db.
 Update the .env file with your database credentials.
 Initialize the database:
 
