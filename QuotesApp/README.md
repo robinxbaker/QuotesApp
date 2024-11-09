@@ -99,18 +99,17 @@ quotes-app/
    git clone https://github.com/yourusername/quotes-app.git
    cd quotes-app/backend
    
-Create a virtual environment:
+2. **Create a virtual environment**:
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   
+3. ***Install dependencies:***
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up the MySQL database:
+   ```bash
+   pip install -r requirements.txt
+   Set up the MySQL database:
 
 Create a MySQL database named quotes_db.
 Update the .env file with your database credentials.
