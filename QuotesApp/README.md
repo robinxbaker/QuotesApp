@@ -105,15 +105,15 @@ quotes-app/
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    
-3. ***Install dependencies:***
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    
-4. ***Set up the MySQL database:***
+4. **Set up the MySQL database:**
 
    - Create a MySQL database named quotes_db.
    - Update the .env file with your database credentials.
-5. ***Initialize the database:***
+5. **Initialize the database:**
 
    ```bash
    flask db init
@@ -121,17 +121,17 @@ quotes-app/
    flask db upgrade
 
 ### Frontend Setup
-1. ***Navigate to the frontend directory:***
+1. **Navigate to the frontend directory:**
 
    ```bash
    cd ../frontend
    
-2. ***Install dependencies:***
+2. **Install dependencies:**
 
    ```bash
    npm install
    
-3. ***Create a .env file with the following content:***
+3. **Create a .env file with the following content:**
 
    ```makefile
    REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id
@@ -164,53 +164,53 @@ Create a .env file in the backend/ directory with the following content:
    npm start
 ```
 ## Deployment
-# Deploying the Backend on Google App Engine
-Deploy the Flask backend:
-bash
-Copy code
-gcloud app deploy
-Deploy the MySQL database on Google Cloud SQL.
-Deploying the Frontend on Firebase
-bash
-Copy code
-cd frontend
-npm run build
-firebase deploy
-API Endpoints
-Authentication
-POST /auth/login - User login with Google OAuth.
-POST /auth/logout - User logout.
-Quotes
-GET /api/quotes - Fetch all public quotes.
-POST /api/quotes - Create a new quote (requires authentication).
-DELETE /api/quotes/<id> - Delete a user's quote.
-Ratings
-POST /api/ratings/rate/<quote_id> - Rate a quote.
-GET /api/ratings/<quote_id> - Get all ratings for a quote.
-Users
-GET /api/users/profile - Get user profile info.
-GET /api/users/my-quotes - Get user's own quotes.
-GET /api/users/saved - Get user's saved quotes.
-Admin
-GET /api/admin/flagged - Get all flagged quotes (admin only).
-DELETE /api/admin/delete_quote/<quote_id> - Delete a flagged quote (admin only).
-Screenshots
-Home Page
+### Deploying the Backend on Google App Engine
+1. **Deploy the Flask backend:**
+   ```bash
+   gcloud app deploy
 
-Create Quote
+2.**Deploy the MySQL database on Google Cloud SQL.**
+### Deploying the Frontend on Firebase
+   ```bash
+   cd frontend
+   npm run build
+   firebase deploy
+```
+## API Endpoints
+### Authentication
+   - POST /auth/login - User login with Google OAuth.
+   - POST /auth/logout - User logout.
+### Quotes
+   - GET /api/quotes - Fetch all public quotes.
+   - POST /api/quotes - Create a new quote (requires authentication).
+   - DELETE /api/quotes/<id> - Delete a user's quote.
+### Ratings
+   - POST /api/ratings/rate/<quote_id> - Rate a quote.
+   - GET /api/ratings/<quote_id> - Get all ratings for a quote.
+### Users
+   - GET /api/users/profile - Get user profile info.
+   - GET /api/users/my-quotes - Get user's own quotes.
+   - GET /api/users/saved - Get user's saved quotes.
+### Admin
+   - GET /api/admin/flagged - Get all flagged quotes (admin only).
+   - DELETE /api/admin/delete_quote/<quote_id> - Delete a flagged quote (admin only).
+## Screenshots
+### Home Page
 
-Profile Page
+### Create Quote
 
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m "Add new feature").
-Push to the branch (git push origin feature-branch).
-Open a pull request.
-License
+### Profile Page
+
+## Contributing
+1. **Fork the repository.**
+2. **Create a new branch** (git checkout -b feature-branch).
+3. **Commit your changes** (git commit -m "Add new feature").
+4. **Push to the branch** (git push origin feature-branch).
+5. **Open a pull request.**
+
+## License
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 Google Cloud Platform
 React and Flask communities
-Special thanks to Real Favicon Generator for helping with the icons.
