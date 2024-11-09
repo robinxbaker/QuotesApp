@@ -115,12 +115,12 @@ quotes-app/
 -Update the .env file with your database credentials.
 5. ***Initialize the database:***
 
-bash
-Copy code
-flask db init
-flask db migrate
-flask db upgrade
-Frontend Setup
+   ```bash
+   flask db init
+   flask db migrate
+   flask db upgrade
+
+### Frontend Setup
 Navigate to the frontend directory:
 
 bash
