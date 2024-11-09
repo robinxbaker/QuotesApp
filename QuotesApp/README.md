@@ -1,42 +1,54 @@
-Quotes App
+# Quotes App
+
 A full-stack web application for users to create, share, and rate quotes. The application allows users to log in using Google OAuth, create quotes, search and filter quotes, rate quotes from 1 to 5 stars, and save their favorite quotes. Additionally, users can choose to post quotes anonymously or publicly and can manage their own content.
 
-Table of Contents
-Features
-Technologies Used
-Project Structure
-Getting Started
-Environment Variables
-Running the Application
-Deployment
-API Endpoints
-Screenshots
-Contributing
-License
-Features
-User Authentication using Google OAuth 2.0.
-Create, view, and delete quotes.
-Rate quotes from 1 to 5 stars.
-Sort and filter quotes by different criteria (highest rated, newest, rising, controversial).
-Save quotes to the user's profile for future reference.
-Users can choose to post quotes publicly, anonymously, or privately.
-Admin dashboard to review flagged content.
-Responsive design for mobile and desktop.
-Technologies Used
-Backend
-Python
-Flask
-Flask-SQLAlchemy
-Flask-Login
-Flask-OAuthlib
-Flask-Mail
-MySQL (Google Cloud SQL)
-Google Cloud Services (App Engine, Cloud SQL)
-Frontend
-React
-Axios
-React Router DOM
-React Google Login
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Running the Application](#running-the-application)
+- [Deployment](#deployment)
+- [API Endpoints](#api-endpoints)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+- **User Authentication** using Google OAuth 2.0.
+- **Create, view, and delete quotes**.
+- **Rate quotes** from 1 to 5 stars.
+- **Sort and filter quotes** by different criteria (highest rated, newest, rising, controversial).
+- **Save quotes** to the user's profile for future reference.
+- Users can choose to post quotes **publicly, anonymously, or privately**.
+- **Admin dashboard** to review flagged content.
+- **Responsive design** for mobile and desktop.
+
+---
+
+## Technologies Used
+### Backend
+- Python
+- Flask
+- Flask-SQLAlchemy
+- Flask-Login
+- Flask-OAuthlib
+- Flask-Mail
+- MySQL (Google Cloud SQL)
+- Google Cloud Services (App Engine, Cloud SQL)
+
+### Frontend
+- React
+- Axios
+- React Router DOM
+- React Google Login
+
+---
+
+## Project Structure
 Project Structure
 css
 Copy code
@@ -70,19 +82,23 @@ quotes-app/
 │   │   ├── index.js
 │   └── package.json
 └── README.md
-Getting Started
-Prerequisites
-Python 3.8+
-Node.js and npm
-MySQL
-Google Cloud account (for deployment)
-Backend Setup
-Clone the repository:
+## Getting Started
 
-bash
-Copy code
-git clone https://github.com/yourusername/quotes-app.git
-cd quotes-app/backend
+### Prerequisites
+- **Python** 3.8+
+- **Node.js** and npm
+- **MySQL**
+- **Google Cloud account** (for deployment)
+
+---
+
+### Backend Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/quotes-app.git
+   cd quotes-app/backend
+   
 Create a virtual environment:
 
 bash
