@@ -106,15 +106,14 @@ quotes-app/
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    
 3. ***Install dependencies:***
-
    ```bash
    pip install -r requirements.txt
    
 4. ***Set up the MySQL database:***
 
-   Create a MySQL database named quotes_db.
-Update the .env file with your database credentials.
-Initialize the database:
+-Create a MySQL database named quotes_db.
+-Update the .env file with your database credentials.
+5. ***Initialize the database:***
 
 bash
 Copy code
